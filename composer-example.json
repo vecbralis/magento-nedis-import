@@ -1,0 +1,26 @@
+{
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*",
+        "nicovogelaar/magento-nedis-import": "dev-master"
+    },
+    "repositories": [
+        {
+            "packagist": false
+        },
+        {
+            "type": "composer",
+            "url": "http://packages.firegento.com"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/magento-hackathon/magento-composer-installer"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/nicovogelaar/magento-nedis-import.git"
+        }
+    ],
+    "extra":{
+        "magento-root-dir": "."
+    }
+}

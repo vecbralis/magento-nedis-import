@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Nicovogelaar_Nedisimport>
+            <version>0.0.1</version>
+        </Nicovogelaar_Nedisimport>
+    </modules>
+    <global>
+        <models>
+            <nicovogelaar_nedisimport>
+                <class>Nicovogelaar_Nedisimport_Model</class>
+            </nicovogelaar_nedisimport>
+        </models>
+        <blocks>
+            <nicovogelaar_nedisimport>
+                <class>Nicovogelaar_Nedisimport_Block</class>
+            </nicovogelaar_nedisimport>
+        </blocks>
+        <helpers>
+            <nicovogelaar_nedisimport>
+                <class>Nicovogelaar_Nedisimport_Helper</class>
+            </nicovogelaar_nedisimport>
+        </helpers>
+    </global>
+    <adminhtml>
+        <layout>
+            <updates>
+                <nedisimport>
+                    <file>nedisimport.xml</file>
+                </nedisimport>
+            </updates>
+        </layout>
+    </adminhtml>
+    <admin>
+        <routers>
+            <adminhtml>
+                <use>admin</use>
+                <args>
+                    <modules>
+                        <Nicovogelaar_Nedisimport before="Mage_Adminhtml">Nicovogelaar_Nedisimport_Adminhtml</Nicovogelaar_Nedisimport>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

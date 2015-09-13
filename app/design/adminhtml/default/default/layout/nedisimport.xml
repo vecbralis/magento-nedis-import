@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_nedisimport_index>
+        <reference name="head">
+            <action method="setTitle" translate="title">
+                <title>Nedis Import</title>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="nicovogelaar_nedisimport/adminhtml_import_catalog" name="nicovogelaar_nedisimport.catalog"/>
+            <block type="nicovogelaar_nedisimport/adminhtml_import_catalog_grid" name="nicovogelaar_nedisimport.catalog.grid"/>
+        </reference>
+    </adminhtml_nedisimport_index>
+</layout>

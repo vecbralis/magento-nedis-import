@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <system>
+            <children>
+                <convert translate="title">
+                    <children>
+                        <nedisimport translate="title" module="nicovogelaar_nedisimport">
+                            <title>Nedis Import</title>
+                            <action>adminhtml/nedisimport</action>
+                            <sort_order>30</sort_order>
+                        </nedisimport>
+                    </children>
+                </convert>
+            </children>
+        </system>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <nedisimport>
+                                        <title>Nedis Import Config</title>
+                                    </nedisimport>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

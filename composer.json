@@ -1,0 +1,16 @@
+{
+    "name": "nicovogelaar/magento-nedis-import",
+    "type": "magento-module",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "extra": {
+        "map": [
+            ["app/etc/modules/Nicovogelaar_Nedisimport.xml", "app/etc/modules/Nicovogelaar_Nedisimport.xml"],
+            ["app/code/community/Nicovogelaar/Nedisimport/", "app/code/community/Nicovogelaar/Nedisimport/"],
+            ["app/design/adminhtml/default/default/layout/nedisimport.xml", "app/design/adminhtml/default/default/layout/nedisimport.xml"],
+            ["shell/nedisimport.php", "shell/nedisimport.php"],
+            ["var/nedisimport/", "var/nedisimport/"]
+        ]
+    }
+}
