@@ -36,7 +36,7 @@ See the full example of a `composer.json` file [here](composer-example.json)
 2. Upload the catalog file: `nedis_catalog_[date]_[locale]_[customer number]_v1-0_xml.xml`
 
 ### CLI
-1. Upload the catalog file to: `/path/to/magento/var/nedisimport`
+1. Upload the catalog file to: `/path/to/magento/var/nedisimport/catalog`
 2. Start the import: `php shell/nedisimport.php --file <filename> [--output]`
 
 Only the XML format is supported. A full import can take longer than one hour.
